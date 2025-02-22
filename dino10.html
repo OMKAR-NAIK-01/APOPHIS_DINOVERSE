@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diplodocus - Dinoverse</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, #2c5364, #0f2027);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #47665e;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #3fc1f4;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .info-section {
+            max-width: 1000px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .info-section h2 {
+            border-bottom: 2px solid #f7ff0c;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            color: #20d613;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+            margin-bottom: 20px;
+        }
+
+        model-viewer {
+            width: 100%;
+            max-width: 800px;
+            height: 600px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .features-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .features-list li {
+            list-style: none;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+            font-size: 1.1rem;
+            color: #ffffff;
+            position: relative;
+        }
+
+        .features-list li:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #1f4037;
+            color: #ffffff;
+            position: relative;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: #19e366;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Diplodocus - The "Double Beam"</h1>
+    </header>
+
+    <main>
+        <model-viewer id="td" src="diplodocus.glb" autoplay camera-controls display-zoom></model-viewer>
+
+        <div class="info-section">
+            <h2>About Diplodocus</h2>
+            <img src="https://cdna.artstation.com/p/assets/images/images/061/065/076/medium/alandodrawing-sauropods-diplodocus-edited-low-res.jpg?1679940276" alt="Diplodocus Dinosaur">
+            <p>Diplodocus, meaning "double beam," was a massive, long-necked herbivorous dinosaur from the Late Jurassic period, around 154 to 152 million years ago. Known for its incredibly long tail and neck, it was one of the longest dinosaurs to ever live, reaching lengths up to 26 meters (85 feet).</p>
+        </div>
+
+        <div class="info-section">
+            <h2>Physical Characteristics</h2>
+            <ul class="features-list">
+                <li>Massive body, reaching up to 26 meters (85 feet) in length.</li>
+                <li>Long neck and tail, which were key to its distinctive appearance.</li>
+                <li>Weighed approximately 12–16 tons.</li>
+                <li>Had a relatively small head compared to its large body.</li>
+                <li>Feet with thick, pillar-like legs, supporting its heavy body.</li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h2>Behavior and Lifestyle</h2>
+            <p>Diplodocus was a herbivore that fed primarily on conifers and other plants. It likely used its long neck to reach vegetation high in trees, while its long tail may have been used for balance and communication with other members of its species.</p>
+        </div>
+
+        <div class="info-section">
+            <h2>Where to Find</h2>
+            <p>Fossils of Diplodocus have been found in North America, specifically in the Morrison Formation, which contains numerous Jurassic-era dinosaur fossils.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Dinoverse Project. All Rights Reserved.</p>
+    </footer>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</body>
+</html>

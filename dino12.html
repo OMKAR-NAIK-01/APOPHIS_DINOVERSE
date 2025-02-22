@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pterosaur - Dinoverse</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, #2c5364, #0f2027);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #47665e;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #3fc1f4;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .info-section {
+            max-width: 1000px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .info-section h2 {
+            border-bottom: 2px solid #f7ff0c;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            color: #20d613;
+        }
+
+        img {
+            width: 68vw;
+            height: 100vh;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+            margin-bottom: 20px;
+        }
+
+        model-viewer {
+            width: 100%;
+            max-width: 800px;
+            height: 600px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .features-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .features-list li {
+            list-style: none;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+            font-size: 1.1rem;
+            color: #ffffff;
+            position: relative;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #1f4037;
+            color: #ffffff;
+            position: relative;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: #19e366;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pterosaur - The "Winged Lizard"</h1>
+    </header>
+
+    <main>
+        <model-viewer id="td" src="pterosaur_quetzalcoatlus_2.glb" autoplay camera-controls display-zoom></model-viewer>
+
+        <div class="info-section">
+            <h2>About Pterosaur</h2>
+            <img src="https://www.dinosaur.org/wp-content/uploads/2023/04/Pterosaur_with_leathery_wings_tucked.png" alt="Pterosaur Flying Reptile">
+            <p>Pterosaurs, meaning "winged lizards," were flying reptiles that lived during the Mesozoic Era, from the Late Triassic to the end of the Cretaceous period (around 228 to 66 million years ago). They were the first vertebrates known to achieve powered flight, making them remarkable creatures in Earth's history.</p>
+        </div>
+
+        <div class="info-section">
+            <h2>Physical Characteristics</h2>
+            <ul class="features-list">
+                <li>
+                    Wingspan ranging from a few feet to over 10 meters (33 feet) in larger species.<br>
+                    These impressive wings allowed efficient gliding and flight.
+                </li>
+                <li>
+                    Hollow bones, lightweight for flight efficiency.<br>
+                    Their light skeletal structure reduced weight and increased mobility.
+                </li>
+                <li>
+                    Membrane wings stretched between elongated fingers and the body.<br>
+                    The wing design provided both flexibility and strength during flight.
+                </li>
+                <li>
+                    Varied sizes, from small bird-like species to massive Quetzalcoatlus.<br>
+                    Smaller species excelled in maneuverability, while larger ones were masters of soaring.
+                </li>
+                <li>
+                    Beak-like mouths, some with teeth adapted for catching prey.<br>
+                    Different beak shapes helped them specialize in various food sources.
+                </li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h2>Behavior and Lifestyle</h2>
+            <p>Pterosaurs were carnivorous, feeding on fish, insects, and small animals. Their flying ability allowed them to hunt efficiently and escape predators. They likely used their sharp eyesight to locate prey and their wings for gliding and powered flight.</p>
+        </div>
+
+        <div class="info-section">
+            <h2>Where to Find</h2>
+            <p>Pterosaur fossils have been found worldwide, including notable discoveries in Europe, North America, South America, and Asia. Their diversity and wide distribution make them a fascinating subject of study for paleontologists.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Dinoverse Project. All Rights Reserved.</p>
+    </footer>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</body>
+</html>

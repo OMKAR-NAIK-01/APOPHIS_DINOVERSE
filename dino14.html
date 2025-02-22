@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triceratops - Dinoverse</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, #2c5364, #0f2027);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #47665e;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #3fc1f4;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .info-section {
+            max-width: 1000px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .info-section h2 {
+            border-bottom: 2px solid #f7ff0c;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            color: #20d613;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+            margin-bottom: 20px;
+        }
+
+        model-viewer {
+            width: 100%;
+            max-width: 800px;
+            height: 600px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .features-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .features-list li {
+            list-style: none;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+            font-size: 1.1rem;
+            color: #ffffff;
+            position: relative;
+        }
+
+        .features-list li:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #1f4037;
+            color: #ffffff;
+            position: relative;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: #19e366;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Triceratops - The "Three-Horned Face"</h1>
+    </header>
+
+    <main>
+        <model-viewer id="td" src="triceptors.glb" autoplay camera-controls display-zoom></model-viewer>
+
+        <div class="info-section">
+            <h2>About Triceratops</h2>
+            <img src="https://www.dinosaur.org/wp-content/uploads/2023/02/a-lone-Triceratops-drinks-from-a-crystal-clear-lake-at-dawn-1024x574.png" alt="Triceratops Dinosaur">
+            <p>Triceratops, meaning "three-horned face," is one of the most famous herbivorous dinosaurs from the Late Cretaceous period, approximately 68 to 66 million years ago. Its distinctive three horns and large bony frill made it a unique and iconic dinosaur.</p>
+        </div>
+
+        <div class="info-section">
+            <h2>Physical Characteristics</h2>
+            <ul class="features-list">
+                <li>Large body reaching up to 9 meters (30 feet) in length.</li>
+                <li>Weighed between 6 to 12 metric tons, similar to modern elephants.</li>
+                <li>Three horns: two large horns above the eyes and one smaller horn on the nose.</li>
+                <li>Massive frill at the back of the skull, likely used for defense or display.</li>
+                <li>Beak-like mouth for cutting tough vegetation, supported by strong jaws.</li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h2>Behavior and Lifestyle</h2>
+            <p>Triceratops was a herbivore, feeding on low-lying plants such as ferns, cycads, and palms. Its horns and frill were likely used for defense against predators like Tyrannosaurus Rex, as well as for mating displays or dominance within its species.</p>
+        </div>
+
+        <div class="info-section">
+            <h2>Where to Find</h2>
+            <p>Fossils of Triceratops have been discovered in North America, particularly in the regions of Montana, South Dakota, and Wyoming. It is one of the most commonly found dinosaurs of the Late Cretaceous period.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Dinoverse Project. All Rights Reserved.</p>
+    </footer>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</body>
+</html>

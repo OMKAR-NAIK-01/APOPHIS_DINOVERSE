@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pachycephalosaurus - Dinoverse</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, #2c5364, #0f2027);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #47665e;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #3fc1f4;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .info-section {
+            max-width: 1000px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .info-section h2 {
+            border-bottom: 2px solid #f7ff0c;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            color: #20d613;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+            margin-bottom: 20px;
+        }
+
+        model-viewer {
+            width: 100%;
+            max-width: 800px;
+            height: 600px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .features-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .features-list li {
+            list-style: none;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+            font-size: 1.1rem;
+            color: #ffffff;
+            position: relative;
+        }
+
+        .features-list li:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #1f4037;
+            color: #ffffff;
+            position: relative;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: #19e366;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pachycephalosaurus - The "Thick-Headed Lizard"</h1>
+    </header>
+
+    <main>
+        <model-viewer id="td" src="pachycephalosaurus_animation.glb" autoplay camera-controls display-zoom></model-viewer>
+
+        <div class="info-section">
+            <h2>About Pachycephalosaurus</h2>
+            <img src="https://cdn.britannica.com/69/8069-050-996E3BC7.jpg">
+            <p>Pachycephalosaurus, meaning "thick-headed lizard," lived during the Late Cretaceous period, approximately 70 to 66 million years ago. This dinosaur is famous for its dome-shaped skull, which was up to 25 cm (10 inches) thick and may have been used in headbutting contests or display behaviors.</p>
+        </div>
+
+        <div class="info-section">
+            <h2>Physical Characteristics</h2>
+            <ul class="features-list">
+                <li>Length of around 4.5 meters (15 feet) and a weight of about 450 kilograms (1,000 pounds).</li>
+                <li>Thick, domed skull composed of solid bone.</li>
+                <li>Small, short forelimbs and strong hind legs for bipedal movement.</li>
+                <li>Small, leaf-shaped teeth suited for herbivorous diets.</li>
+                <li>Possibly covered in scales with ridges or knobs around the head.</li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h2>Behavior and Lifestyle</h2>
+            <p>Pachycephalosaurus likely fed on a variety of low-lying plants, fruits, and seeds. Its thick skull may have been used in intraspecies combat or as a display feature to attract mates or assert dominance.</p>
+        </div>
+
+        <div class="info-section">
+            <h2>Where to Find</h2>
+            <p>Fossils of Pachycephalosaurus have been discovered in North America, particularly in regions like Montana, South Dakota, and Wyoming. These areas were once lush environments during the Late Cretaceous period.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Dinoverse Project. All Rights Reserved.</p>
+    </footer>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</body>
+</html>

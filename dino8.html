@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stegosaurus - Dinoverse</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, #2c5364, #0f2027);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #47665e;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #3fc1f4;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .info-section {
+            max-width: 1000px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .info-section h2 {
+            border-bottom: 2px solid #f7ff0c;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            color: #20d613;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+            margin-bottom: 20px;
+        }
+
+        model-viewer {
+            width: 100%;
+            max-width: 800px;
+            height: 600px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .features-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .features-list li {
+            list-style: none;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+            font-size: 1.1rem;
+            color: #ffffff;
+            position: relative;
+        }
+
+        .features-list li:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #1f4037;
+            color: #ffffff;
+            position: relative;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: #19e366;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .features-list {
+    display: block;
+    padding: 0;
+}
+
+.features-list li {
+    margin-bottom: 10px; /* Add spacing between items */
+}
+.features-list {
+    display: block;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.features-list li {
+    margin-bottom: 25px; /* Add spacing between items */
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Stegosaurus - The "Roof Lizard"</h1>
+    </header>
+
+    <main>
+        <model-viewer id="td" src="stego.glb" autoplay camera-controls display-zoom></model-viewer>
+
+        <div class="info-section">
+            <h2>About Stegosaurus</h2>
+            <img src="https://cdn.britannica.com/75/8075-050-B60C1AC1/Stegosaurus.jpg" alt="Stegosaurus Dinosaur">
+            <p>Stegosaurus, meaning "roof lizard," was a herbivorous dinosaur that roamed during the Late Jurassic period, approximately 155–150 million years ago. Known for its distinctive plates along its back and spiked tail, Stegosaurus remains one of the most recognizable dinosaurs.</p>
+        </div>
+
+        <div class="info-section">
+            <h2>Physical Characteristics</h2>
+            <ul class="features-list">
+                <li>Large, bony plates running along its back, likely used for display or thermoregulation.</li>
+                <li>Spiked tail, known as a "thagomizer," used for defense.</li>
+                <li>Weighed around 5 metric tons and measured up to 9 meters (30 feet) in length.</li>
+                <li>Small head with a beak for cropping vegetation.</li>
+                <li>Relatively short legs, with the hind legs longer than the front legs.</li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h2>Behavior and Lifestyle</h2>
+            <p>Stegosaurus was a slow-moving herbivore that fed on low-lying plants such as ferns and cycads. Its spiked tail provided a formidable defense against predators like Allosaurus.</p>
+        </div>
+
+        <div class="info-section">
+            <h2>Where to Find</h2>
+            <p>Fossils of Stegosaurus have been discovered in North America and Europe, particularly in the Morrison Formation, which has provided rich insights into Late Jurassic ecosystems.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Dinoverse Project. All Rights Reserved.</p>
+    </footer>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</body>
+</html>

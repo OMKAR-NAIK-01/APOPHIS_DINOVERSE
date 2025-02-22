@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fossil Discoveries of Dinosaurs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .hero {
+            background: url('https://wallpaperaccess.com/full/1884823.jpg') no-repeat center center/cover;
+            height: 80vh;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .card img {
+            height: 300px; /* Increase the height of the images */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .section-header {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #4B5563;
+        }
+
+        .btn {
+            background-color: #2563EB;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #1E40AF;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Hero Section -->
+    <section class="hero flex items-center justify-center text-white">
+        <div class="hero-content text-center">
+            <h1 class="text-5xl font-extrabold mb-4">Fossil Discoveries of Dinosaurs</h1>
+            <p class="text-lg mb-6">Unearthing the secrets of the prehistoric world</p>
+            <a href="#discoveries" class="btn">Explore Discoveries</a>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="py-12 px-6">
+        <div class="container mx-auto text-center">
+            <h2 class="section-header mb-6">Discovering the Past</h2>
+            <p class="text-lg leading-relaxed max-w-3xl mx-auto">
+                Fossil discoveries have unlocked the mysteries of the Age of Dinosaurs, showcasing how these magnificent creatures lived, evolved, and ruled the Earth for millions of years. From massive skeletons to tiny footprints, each fossil tells a story of a world long gone.
+            </p>
+        </div>
+    </section>
+
+    <!-- Fossil Discoveries -->
+    <section id="discoveries" class="py-12 bg-gradient-to-br from-white via-gray-100 to-gray-200">
+        <div class="container mx-auto">
+            <h2 class="section-header text-center mb-10">Remarkable Discoveries</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Fossil Card 1 -->
+                <div class="card bg-white shadow-xl rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform">
+                    <img src="https://blenderartists.org/uploads/default/original/4X/c/f/8/cf8b620d45e63909642136ade265ccdb8dae9541.jpeg" alt="Archaeopteryx Fossil" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Archaeopteryx</h3>
+                        <p class="text-sm text-gray-600">The discovery of Archaeopteryx bridged the gap between dinosaurs and birds, showcasing feathered evolution.</p>
+                    </div>
+                </div>
+                <!-- Fossil Card 2 -->
+                <div class="card bg-white shadow-xl rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform">
+                    <img src="https://assets.editorial.aetnd.com/uploads/2012/05/this-day-in-history-08-12-1990-skeleton-of-t-rex-discovered.jpg" alt="Tyrannosaurus rex Fossil" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Tyrannosaurus Rex</h3>
+                        <p class="text-sm text-gray-600">The iconic T. rex skeleton has revealed its apex predator status, strength, and massive size.</p>
+                    </div>
+                </div>
+                <!-- Fossil Card 3 -->
+                <div class="card bg-white shadow-xl rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform">
+                    <img src="https://live.staticflickr.com/3865/14588424275_2a548818cf_b.jpg" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Triceratops</h3>
+                        <p class="text-sm text-gray-600">This herbivorous dinosaur's fossils highlight its defensive horns and massive frill.</p>
+                    </div>
+                </div>
+                <!-- Fossil Card 4 -->
+                <div class="card bg-white shadow-xl rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform">
+                    <img src="https://natureworks.com.au/wp-content/uploads/2019/02/Velociraptor_Fossil_Wall_Frieze_Bronze_VFWFBZ-1.png" alt="Velociraptor Fossil" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Velociraptor</h3>
+                        <p class="text-sm text-gray-600">Known for its speed and intelligence, the Velociraptor's fossils have captivated paleontologists.</p>
+                    </div>
+                </div>
+                <!-- Fossil Card 5 -->
+                <div class="card bg-white shadow-xl rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform">
+                    <img src="https://live.staticflickr.com/2452/4044728296_668cee1bf2_b.jpg" alt="Brachiosaurus Fossil" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Brachiosaurus</h3>
+                        <p class="text-sm text-gray-600">This towering dinosaur's fossils reveal its incredible height and long neck, perfect for grazing treetops.</p>
+                    </div>
+                </div>
+                <!-- Fossil Card 6 -->
+                <div class="card bg-white shadow-xl rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform">
+                    <img src="https://www.cpr.org/cdn-cgi/image/width=3840,quality=75,format=auto/https://wp-cpr.s3.amazonaws.com/uploads/2024/07/AP24192815757087.jpg" alt="Stegosaurus Fossil" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Stegosaurus</h3>
+                        <p class="text-sm text-gray-600">The Stegosaurus is known for its unique plates and spiked tail, reconstructed from fossil evidence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="py-12 px-6 bg-gray-800 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="section-header mb-6">The Legacy of Fossils</h2>
+            <p class="text-lg leading-relaxed max-w-3xl mx-auto">
+                Dinosaur fossils continue to inspire awe and wonder, providing a window into Earth's distant past. Each discovery brings us closer to understanding the incredible story of life on this planet.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-gray-900 text-white text-center">
+        <p>&copy; 2025 Fossil Discoveries. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
